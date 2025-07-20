@@ -2,63 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta styles.css="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Homepage</title>
-    <style>
-        /* Basic styling for demonstration */
-        header, nav, main, footer {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav li {
-            display: inline;
-            margin-right: 10px;
-        }
-    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedric Denson | The Web Designer</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-
-      <!-- Developer comment: This is a simple code used with the linked with the styles.css program, which was pretty easy to utilize and gives the site a lot more personality.-->
+    <!-- Developer comment: Enhanced HTML structure with semantic elements and responsive design -->
+    <!-- ...existing code... -->
+<body>
+    
     <header>
-        <!-- Replace with your logo and name -->
+        <!-- Logo and main title with responsive image -->
         <h1>Cedric Denson "The Web Designer"</h1>
-        <img src="https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg" alt="An image of a web designer" width="300" height="300"
-        >
-
+        <img src="https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg" 
+             alt="Professional web designer at work with multiple monitors showing code and design" 
+             width="300" height="300">
     </header>
 
+    <!-- Sticky navigation bar with flexbox layout -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- Main content area with CSS Grid layout -->
     <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Hello! This is my homepage. I am a web developer. I am learning to build websites and this is my first project. I am excited to learn more and create more interesting content.</p>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Welcome to My Web Design Portfolio</h2>
+                    <p>Hello! I'm Cedric Denson, a passionate web developer specializing in creating modern, responsive websites that deliver exceptional user experiences. This portfolio showcases my journey in web development and demonstrates my skills in HTML, CSS, JavaScript, and modern web technologies.</p>
+                    <p>I believe in creating websites that not only look beautiful but also function seamlessly across all devices and screen sizes. My approach combines clean, semantic HTML with modern CSS layout techniques like Flexbox and Grid to ensure optimal performance and accessibility.</p>
+                    <p>Whether you need a simple business website, an e-commerce platform, or a complex web application, I'm here to bring your vision to life. I'm constantly learning and staying up-to-date with the latest web development trends and best practices.</p>
+                </div>
+                <div class="sidebar">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Experience:</strong> 2+ years in web development</li>
+                        <li><strong>Specialties:</strong> Responsive design, CSS Grid, Flexbox</li>
+                        <li><strong>Tools:</strong> HTML5, CSS3, JavaScript, Git</li>
+                        <li><strong>Focus:</strong> User experience and accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Table -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a dedicated web developer with a passion for creating digital experiences that make a difference. Here's a breakdown of my skills and experience:</p>
+            
+            <!-- HTML Table with CSS styling for tabular data -->
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Skill Category</th>
+                        <th>Technologies</th>
+                        <th>Experience Level</th>
+                        <th>Projects Completed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend Development</td>
+                        <td>HTML5, CSS3, JavaScript</td>
+                        <td>Advanced</td>
+                        <td>25+</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Flexbox, Grid, Media Queries</td>
+                        <td>Expert</td>
+                        <td>30+</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Design</td>
+                        <td>Figma, Adobe XD, Sketch</td>
+                        <td>Intermediate</td>
+                        <td>15+</td>
+                    </tr>
+                    <tr>
+                        <td>Version Control</td>
+                        <td>Git, GitHub, GitLab</td>
+                        <td>Advanced</td>
+                        <td>All Projects</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>My Services</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <p>I offer comprehensive web development services tailored to meet your specific needs. From concept to deployment, I handle every aspect of the web development process.</p>
+                    <h3>What I Offer:</h3>
+                    <ul>
+                        <li>Custom Website Development</li>
+                        <li>Responsive Web Design</li>
+                        <li>Website Optimization</li>
+                        <li>Maintenance and Updates</li>
+                        <li>Consultation and Strategy</li>
+                    </ul>
+                </div>
+                <div class="sidebar">
+                    <h3>Why Choose Me?</h3>
+                    <ul>
+                        <li>Mobile-first approach</li>
+                        <li>Clean, semantic code</li>
+                        <li>Fast loading times</li>
+                        <li>SEO-friendly structure</li>
+                        <li>Ongoing support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section with CSS Grid -->
+        <section id="gallery">
+            <h2>Project Gallery</h2>
+            <p>Here are some examples of my recent work. Each project demonstrates different aspects of modern web development, from responsive layouts to interactive user interfaces.</p>
+            
+            <!-- Gallery grid with responsive columns -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop" 
+                         alt="Modern responsive website design on laptop">
+                    <h3>E-commerce Platform</h3>
+                    <p>A fully responsive online store built with modern CSS Grid layout and mobile-first design principles.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" 
+                         alt="Creative portfolio website layout">
+                    <h3>Portfolio Website</h3>
+                    <p>A creative portfolio site showcasing advanced CSS animations and Flexbox layouts for optimal user experience.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=300&fit=crop" 
+                         alt="Business website with clean design">
+                    <h3>Business Website</h3>
+                    <p>A professional business site featuring clean typography, strategic use of white space, and conversion-focused design.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" 
+                         alt="Web application interface">
+                    <h3>Web Application</h3>
+                    <p>A dynamic web application with interactive elements, responsive data tables, and intuitive user interface design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <p>Ready to start your next web project? I'd love to hear from you! Whether you have a specific project in mind or just want to discuss possibilities, feel free to reach out.</p>
+                    <p>I'm always excited to work on new challenges and help businesses establish a strong online presence. Let's create something amazing together!</p>
+                </div>
+                <div class="sidebar">
+                    <h3>Contact Information</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Email</td>
+                                <td>cedric.denson@email.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>(555) 123-4567</td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td>linkedin.com/in/cedricdenson</td>
+                            </tr>
+                            <tr>
+                                <td>GitHub</td>
+                                <td>github.com/cedricdenson</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer with flexbox navigation -->
     <footer>
         <nav>
             <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#sitemap">Site Map</a></li>
             </ul>
         </nav>
-        <p>&copy; 2024 Cedric Denson</p>
+        <p>&copy; 2024 Cedric Denson. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
