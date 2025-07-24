@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section featuring the web designer's name and professional image -->
     <header>
         <h1>Cedric Denson "The Web Designer"</h1>
+        <!-- Professional stock image showing a web designer workspace with multiple monitors -->
         <img src="https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg" 
              alt="Professional web designer at work with multiple monitors showing code and design" 
              width="300" height="300">
     </header>
 
+    <!-- Main navigation menu linking to different sections of the portfolio website -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -25,11 +28,28 @@
     </nav>
 
     <main>
+        <!-- 
+        PROJECT GALLERY SECTION
+        This gallery showcases Cedric Denson's web development portfolio with multiple types of media:
+        - 4 project showcase items with images and descriptions
+        - 1 embedded YouTube video for educational content
+        - 1 audio player for creative inspiration
+        
+        The gallery demonstrates various web development skills and project types including:
+        - E-commerce platforms
+        - Portfolio websites  
+        - Business websites
+        - Web applications
+        -->
         <section id="gallery">
             <h2>Project Gallery</h2>
             <p>Here are some examples of my recent work. Each project demonstrates different aspects of modern web development, from responsive layouts to interactive user interfaces.</p>
             
+            <!-- Gallery grid container - likely uses CSS Grid or Flexbox for responsive layout -->
             <div class="gallery-grid">
+                
+                <!-- PROJECT 1: E-commerce Platform -->
+                <!-- Features a clickable image that opens full-size version in new tab -->
                 <div class="gallery-item">
                     <a href="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&h=900&fit=crop" target="_blank">
                         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop" 
@@ -38,6 +58,9 @@
                     <h3>E-commerce Platform</h3>
                     <p>A fully responsive online store built with modern CSS Grid layout and mobile-first design principles.</p>
                 </div>
+                
+                <!-- PROJECT 2: Portfolio Website -->
+                <!-- Showcases creative design and advanced CSS techniques -->
                 <div class="gallery-item">
                     <a href="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=900&fit=crop" target="_blank">
                         <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" 
@@ -46,6 +69,9 @@
                     <h3>Portfolio Website</h3>
                     <p>A creative portfolio site showcasing advanced CSS animations and Flexbox layouts for optimal user experience.</p>
                 </div>
+                
+                <!-- PROJECT 3: Business Website -->
+                <!-- Emphasizes professional design and conversion optimization -->
                 <div class="gallery-item">
                     <a href="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&h=900&fit=crop" target="_blank">
                         <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=300&fit=crop" 
@@ -54,6 +80,9 @@
                     <h3>Business Website</h3>
                     <p>A professional business site featuring clean typography, strategic use of white space, and conversion-focused design.</p>
                 </div>
+                
+                <!-- PROJECT 4: Web Application -->
+                <!-- Demonstrates interactive functionality and data handling -->
                 <div class="gallery-item">
                     <a href="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=900&fit=crop" target="_blank">
                         <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" 
@@ -62,27 +91,34 @@
                     <h3>Web Application</h3>
                     <p>A dynamic web application with interactive elements, responsive data tables, and intuitive user interface design.</p>
                 </div>
-                <!-- Embedded YouTube Video -->
+                
+                <!-- EMBEDDED YOUTUBE VIDEO -->
+                <!-- Educational content about essential web design skills -->
+                <!-- Uses responsive iframe with YouTube's standard embed parameters -->
                 <div class="gallery-item">
                     <iframe width="400" height="225" src="https://www.youtube.com/embed/vbFn0C-pvis" 
-                        title="The top 5 Web Design Skills that Actually Matter." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        title="The top 5 Web Design Skills that Actually Matter." frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
                     <h3>The top 5 Web Design Skills that Actually Matter.</h3>
                 </div>
-                <!-- Embedded Audio File -->
+                
+                <!-- EMBEDDED AUDIO PLAYER -->
+                <!-- Creative audio content with multiple format support for browser compatibility -->
+                <!-- Includes fallback sources in MP3, OGG, and WAV formats -->
                 <div class="gallery-item">
-                    <audio controls style="width: 100%; max-width: 400px;">
-                        <source src="audio/future-design-344320.mp3" type="audio/mpeg">
-                        <source src="audio/future-design-344320.ogg" type="audio/ogg">
-                        <source src="audio/future-design-344320.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <h3>Future Design Audio</h3>
-                    <p>Listen to the Future Design audio track - an inspiring soundtrack for creative web development.</p>
-                </div>
+    <audio controls>
+        <source src="audio/future-design-344320.mp3" type="audio/MP3">
+        Your browser does not support the audio element.
+    </audio>
+    <h3>Future Design Audio</h3>
+    <p>Listen to the Future Design audio track.</p>
+</div>
             </div>
         </section>
     </main>
 
+    <!-- Footer with additional navigation links and copyright information -->
     <footer>
         <nav>
             <ul>
